@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href=" ">
+    <title>Rights Air</title>
+    <link rel="icon" type="img/png" href="~/img/favicon.png">
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!--link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"-->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="~/css/navbar-static-top.css" rel="stylesheet">
+    <script src="~/js/ie-emulation-modes-warning.js"></script>
+    <link href="~/css/carousel.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="~/Home/Index"><img src="~/img/logo_Rightsair.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="~/Home/YourRights">YOUR RIGHTS</a></li>
+                <li><a href="~/Home/Contact">CONTACT US</a></li>
+                <li><a href="~/Home/Corporate">CORPORATE</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="star">START YOUR CLAIM</span></a></li>
+                <li class="dropdown idioma">
+                    <a href="#" class="select-idioma dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="item-idioma">
+                            <a role="menuitem" href="index.html">
+                                <img src="~/img/en.png">
+                                English
+                            </a>
+                        </li>
+                        <li class="item-idioma">
+                            <a role="menuitem" href="index_esp.html">
+                                <img src="~/img/es.png">
+                                Español
+                            </a>
+                        </li>
+                        <li class="item-idioma">
+                            <a role="menuitem" href="index_fran.html">
+                                <img src="~/img/fr.png">
+                                Français
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="btn-login"><a class="login" href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    @RenderBody()
+    <footer>
+
+        <div class="sombra"></div>
+        <div class="sub-container-footer">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="box-fmenu">
+                        <div id="menu">
+                            <div class="t-follow">MENU</div>
+                            <div class="f-widget">
+                                <ul class="lista-menu">
+                                    <li class="border"><a href="~/Home/Corporate/">Corporate</a></li>
+                                    <li class="border"><a href="~/Home/YourRights/">Your Rights</a></li>
+                                    <li class="border"><a href="~/Home/Contact/">Contact US</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="box-ffollow">
+                        <div id="follow">
+                            <div class="t-follow">FOLLOW US</div>
+                            <div class="redes-follow">
+                                <a href="https://www.facebook.com/rightsair" target="_blank"><div class="redes fb1"></div></a>
+                                <a href="#" target="_blank"><div class="redes gg1"></div></a>
+                                <a href="https://twitter.com/rightsair" target="_blank"><div class="redes tw1"></div></a>
+                                <a href="https://uk.linkedin.com/in/wissam-lahmar-32484a4" target="_blank"><div class="redes in1"></div></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="assistance" class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                    <div class="box-fassis">
+                        <div class="img-assistance"></div>
+                        <a class="get" href="contact.html">
+                            <div class="get-assistance">Get an assistance</div>
+                            <div class="now">NOW</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="text-ffooter copy-right">
+                        &copy; COPYRIGHT RIGHTSAIR - ALL RIGHTS RESERVED.
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="text-ffooter terms">
+                        <a href="terms-conditions.html">Terms & Conditions | Privacy | Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<script src="~/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="~/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Recaptcha api google-->
+<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+</html>
