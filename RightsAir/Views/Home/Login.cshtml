@@ -1,0 +1,87 @@
+﻿<div id="wrapper">
+
+    <div>
+        @*<div class="loading-indicator ng-hide" ng-show="isStateLoading">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row marginT paddingTB paddingRL processD" style="background-color: #fff;">
+                            <div class="loading-indicator-body">
+                                <div class="spinner">
+                                    <wave-spinner>
+                                        <div class="wave-spinner">
+                                            <div class="rect1"></div>
+                                            <div class="rect2"></div>
+                                            <div class="rect3"></div>
+                                            <div class="rect4"></div>
+                                            <div class="rect5"></div>
+                                        </div>
+                                    </wave-spinner>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@<!-- uiView:  --><div class="ng-scope" id="ng-view" ui-view="">
+            <div class="container ng-binding ng-scope">
+
+                <div class="row" style="position: relative;" cg-busy="[authenticateMe,loginIn]">
+                    <div class="center-form panel">
+                        <div class="panel-body">
+                            <form name="loginForm" class="ng-pristine ng-invalid ng-invalid-required" method="post" ng-submit="login()">
+                                <div class="form-group has-feedback">
+                                    <input name="email" class="form-control input-lg ng-pristine ng-invalid ng-invalid-required ng-touched" autofocus="" required="" type="text" placeholder="Email" ng-model="email">
+                                    <span class="ion-at form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <input name="password" class="form-control input-lg ng-pristine ng-untouched ng-invalid ng-invalid-required" required="" type="password" placeholder="Password" ng-model="password">
+                                    <span class="ion-key form-control-feedback"></span>
+                                </div>
+                                <button disabled="disabled" class="btn btn-lg  btn-block btn-primary ng-binding" type="submit" analytics-event="login" analytics-category="login" analytics-on="click">Log in</button>
+                                <br>
+                                <p class="text-center">
+                                    <a class="ng-binding" href="#!//forgot/" ui-sref="forgot">Forgot your password?</a>
+                                </p>
+                                <p class="text-center text-muted">
+                                    <small class="ng-binding">Don't have an account yet? <a class="ng-binding" href="#!//signup" ui-sref="signup">Sign up</a></small>
+                                </p>
+
+                            </form>
+                            <!--<button class="btn btn-block btn-primary" ng-click="">
+                                <i class="fa fa-facebook"></i>  {{'sign_in_facebook' | translate}}
+                            </button>-->
+
+                        </div>
+                    </div>
+                    @*<div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-hide ng-scope" ng-show="$cgBusyIsActive()"></div><div class="cg-busy cg-busy-animation ng-hide ng-scope" ng-show="$cgBusyIsActive()">
+                            <div class="wave-spinner" style="left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;">
+                                <div class="rect1"></div>
+                                <div class="rect2"></div>
+                                <div class="rect3"></div>
+                                <div class="rect4"></div>
+                                <div class="rect5"></div>
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    test
+    @*<script src="~/node_modules/vue/dist/vue.min.js"></script>*@
+
+    <div id="app">
+        {{message}}
+    </div>
+    -  test
+
+
+    <script>
+        const v = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue.js!'
+            }
+        })
+    </script>
+
+    <!-- <div ui-view id="ng-view" ></div>-->
+</div>

@@ -17,6 +17,8 @@
     <link href="~/css/navbar-static-top.css" rel="stylesheet">
     <script src="~/js/ie-emulation-modes-warning.js"></script>
     <link href="~/css/carousel.css" rel="stylesheet">
+    @Scripts.Render("~/node_modules/vue/dist/vue.min.js")
+
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -41,26 +43,27 @@
                     <a href="#" class="select-idioma dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li class="item-idioma">
-                            <a role="menuitem" href="index.html">
+                            <a role="menuitem" href="~/Home/ChangeCurrentCulture/0">
                                 <img src="~/img/en.png">
                                 English
                             </a>
                         </li>
                         <li class="item-idioma">
-                            <a role="menuitem" href="index_esp.html">
+                            <a role="menuitem" href="~/Home/ChangeCurrentCulture/1">
                                 <img src="~/img/es.png">
                                 Español
                             </a>
                         </li>
+
                         <li class="item-idioma">
-                            <a role="menuitem" href="index_fran.html">
+                            <a role="menuitem" href="~/Home/ChangeCurrentCulture/2">
                                 <img src="~/img/fr.png">
                                 Français
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="btn-login"><a class="login" href="#">LOGIN</a></li>
+                <li class="btn-login"><a class="login" href="~/Home/Login">LOGIN</a></li>
             </ul>
         </div>
     </nav>
@@ -103,7 +106,7 @@
                 <div id="assistance" class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
                     <div class="box-fassis">
                         <div class="img-assistance"></div>
-                        <a class="get" href="contact.html">
+                        <a class="get" href="~/Home/Contact">
                             <div class="get-assistance">Get an assistance</div>
                             <div class="now">NOW</div>
                         </a>
